@@ -1,5 +1,9 @@
 # AzDo-synpaseserverlessdacpac
-First extracts the contents of a database in a serverless SQL Pool to a dacpac. It then deploys the contents of the dacpac to a database in a serverless SQL Pool.
+Example of a state-Based deployment that can create a dacpac file and deploy it to an Azure Synapse serverless SQL Pool using Azure DevOps. Based on a blog post I wrote called '[Deploying a dacpac to a serverless SQL pool](https://www.kevinrchant.com/2023/02/15/deploying-a-dacpac-to-a-serverless-sql-pool/)'.
+
+You can find the YAML file which you can use as a template in the AzureDevOpsTemplates folder.
+
+First the pipeline extracts the contents of a database in a serverless SQL Pool to a dacpac. It then deploys the contents of the dacpac to a database in a serverless SQL Pool.
 
 Please note that you need the below variables created for this to work
 I recommend doing this by creating at least one variable group
