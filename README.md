@@ -1,9 +1,9 @@
-# AzDo-synpaseserverlessdacpac
+# AzureDevOps-synpaseserverlessdacpac
 Example of a state-Based deployment that can create a dacpac file and deploy it to an Azure Synapse serverless SQL Pool using Azure DevOps. Based on a blog post I wrote called '[Deploying a dacpac to a serverless SQL pool](https://www.kevinrchant.com/2023/02/15/deploying-a-dacpac-to-a-serverless-sql-pool/)'.
 
 You can find the YAML file which you can use as a template in the AzureDevOpsTemplates folder.
 
-First the pipeline extracts the contents of a database in a serverless SQL Pool to a dacpac. It then deploys the contents of the dacpac to a database in a serverless SQL Pool.
+First the pipeline extracts the contents of a database in a serverless SQL Pool to a dacpac. It then deploys the contents of the dacpac to a database in the same  serverless SQL Pool.
 
 Please note that you need the below variables created for this to work
 I recommend doing this by creating at least one variable group
@@ -17,3 +17,5 @@ I recommend doing this by creating at least one variable group
 *   SQLPoolartifactname - A name for the created artifact
 *   AzureSubscription - The Azure subscription that contains the serverless SQL Pool where you want to deploy the dacpac
 *   DestinationDB - The name of the target/destination database where you to deploy the dacpac
+
+Note that you can extend this however you see fit. For example, you can add a variable for a second serverless SQL Pool endpoint which belongs to another workspace.
