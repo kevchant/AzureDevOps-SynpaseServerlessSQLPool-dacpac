@@ -1,4 +1,4 @@
-# AzureDevOps-synpaseserverlessdacpac
+# AzureDevOps-SynpaseServerlessSQLPool-dacpac
 Example of a state-Based deployment that can create a dacpac file based on an existing serverless SQL Pool and deploy it to another Azure Synapse serverless SQL Pool using Azure DevOps. Based on a blog post I wrote called '[Deploying a dacpac to a serverless SQL pool](https://www.kevinrchant.com/2023/02/15/deploying-a-dacpac-to-a-serverless-sql-pool/)'.
 
 You can find the YAML file which you can use as a template in the AzureDevOpsTemplates folder.
