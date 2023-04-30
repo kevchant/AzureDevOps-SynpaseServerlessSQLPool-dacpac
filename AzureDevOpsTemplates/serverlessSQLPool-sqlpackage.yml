@@ -19,6 +19,7 @@
 variables:
 - group: SQLPackageTest
 
+# Is triggered to run if the main branch is updated
 trigger:
 - main
 
